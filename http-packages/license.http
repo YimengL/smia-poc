@@ -1,0 +1,40 @@
+@licenseId = "0235431845"
+@organizationId = optimaGrowth
+
+### /license/{licenseId} [GET]
+
+GET http://localhost:8080/v1/organization/{{organizationId}}/license/{{licenseId}}
+Accept: application/json
+
+
+### /license/{licenseId} [DELETE]
+
+DELETE http://localhost:8080/v1/organization/{{organizationId}}/license/{{licenseId}}
+
+
+### /license [POST]
+
+POST http://localhost:8080/v1/organization/{{organizationId}}/license
+Content-Type: application/json
+
+{
+  "licenseId": {{licenseId}},
+  "organizationId": "optima Growth",
+  "description": "Software product",
+  "productName": "Ostock",
+  "licenseType": "Complete"
+}
+
+### /license [PUT]
+
+PUT http://localhost:8080/v1/organization/{{organizationId}}/license
+Content-Type: application/json
+Accept: application/json
+
+{
+  "licenseId": {{licenseId}},
+  "organizationId": "optima Growth",
+  "description": "Software product",
+  "productName": "Ostock",
+  "licenseType": "Complete"
+}
